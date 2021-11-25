@@ -253,7 +253,7 @@ color: var(--color-secundario-claro);
     text-decoration: none;
     font-weight: 700;
     color: var(--color-primario-claro);
-    padding: 5px;
+    padding:  10px 20px;
     border: 1px solid var(--color-primario-claro);
     
 }
@@ -275,8 +275,10 @@ color: var(--color-secundario-claro);
    color:var(--color-primario-claro)
   }
 .btn-referencia{
-  margin-left: 250px;
-
+  justify-content: center;
+  width: 100px;
+  margin-left:20px;
+  justify-items: flex-end;
 }
 /* PORTAFOLIO */
 
@@ -465,4 +467,11 @@ color: var(--color-secundario-claro);
   right: 20px;
   cursor: pointer;
   z-index: 100;
+}
+
+.porfolio_cara{
+  font-size: 10px;
+}
+.porfolio_cara:hover{
+   font-size:13px;
 }
