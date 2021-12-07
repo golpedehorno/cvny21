@@ -323,8 +323,15 @@ color: var(--color-secundario-claro);
 .sibiu{
   background-image: url("img/sibiu_web.png");
 }
-
-
+.tania{
+  background-image: url("img/tania_web.png");
+}
+.rinder{
+  background-image: url("img/rinder_web.png");
+}
+.aire{
+  background-image: url("img/aire_web.png");
+}
 .aclaracion{
   margin:20px;
 }
