@@ -96,7 +96,7 @@ color: var(--color-secundario-claro);
     justify-content:space-around;
     position: relative;
   }
-    .card {
+    .card , .cord{
       position: relative;
       width: 400px;
       height: 450px;
@@ -105,7 +105,7 @@ color: var(--color-secundario-claro);
       /* border-radius: 15px; */
       box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
     }
-      .cara {
+      .cara, .cora{
         position: absolute;
         bottom: 0;
         left: 0;
@@ -132,38 +132,40 @@ color: var(--color-secundario-claro);
             -webkit-text-fill-color: transparent;
           } */
 
-        .cara2 {
+        .cara2 , .cora2{
           transition: 0.5s;
         }
-          .cara2 h2 {
+          .cara2 h2 , .cora2{
             margin: 0;
             padding: 0;
             font-size: 3em;
             color: #fff;
             transition: 0.5s;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 10;
+            z-index: 0;
           }
         
       
     
 
-    .card:hover .cara.cara2 {
+    .card:hover .cara.cara2 , .cord:hover .cora.cora2{
       height: 60px;
     }
-      .card:hover .cara.cara h2 {
+      .card:hover .cara.cara h2{
         font-size: 2em;
       }
     
 
     .card:nth-child(1) .cara.cara2 , .card:nth-child(2) .cara.cara2 , .card:nth-child(3)  .cara.cara2 {
-      background-image: linear-gradient(
+      /*background-image: linear-gradient(
         40deg,
-         var(--color-primario-claro) 0%,
+         /*var(--color-primario-claro) 0%,
         /* var(--color-primario-claro) 45%, */
-        var(--color-secundario-claro)  100%
-      );
+        /*var(--color-secundario-claro)  100% */
+       
+      /*);
       /* border-radius: 15px; */
+     background-color: var(--color-secundario-claro);
     }
     .cara-puesto {
       color: var(--color-primario-claro);
@@ -179,12 +181,12 @@ color: var(--color-secundario-claro);
     justify-content:center;
 }
 
-.container2 .card2{
+.container2 .card2 {
     position: relative;
     /* cursor: pointer; */
 }
 
-.container2 .card2 .face{
+.container2 .card2 .face {
     width: 300px;
     height: 200px;
     transition: 0.5s;
@@ -282,182 +284,55 @@ color: var(--color-secundario-claro);
 }
 /* PORTAFOLIO */
 
-.container3  {
-  /* position: absolute;
-  left: 50%;
-  top: 100%; */
-  position: relative;
-  /* transform: translate(-50%, -50%); */
-  height: 300px;
-  width: 400px;
-  background: var(--color-gris-claro);
-  overflow: hidden;
-  /* border-radius: 20px; */
-  cursor: pointer;
-  /* box-shadow: 0 0 20px 8px #d0d0d0; */
-  margin: 100px;
+.cord:nth-child(1) .cora.cora2 , .cord:nth-child(2) .cora.cora2 , .cord:nth-child(3)  .cora.cora2 {
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-color: var(--color-gris-claro);
+  background-position:0 100px;
+  margin: auto;
+  border:3px solid var(--color-secundario-claro);
 }
- .content3 {
+
+.porfolio_cara > h2 {
   position: absolute;
-  top: 50%;
-  transform: translatey(-50%);
-  text-align: justify;
-  color: #000;
-  padding: 60px;
-  margin-top:20px;
- }
-  h1 {
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  h3 {
-    font-weight: 300;
-  }
-  
-  .flap1{
-    width: 100%;
-    height: 100%;
-  }
-  
-  .flap1::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 50%;
-    background: url("img/1argensoft.png") var(--color-gris-claro);
-    background-size: cover;
-    background-position: -70px;
-    background-repeat: no-repeat;
-    transition: 1s;
-  } 
- 
-  .flap1::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 50%;
-    right: 0;
-    background: url("img/1argensoft.png") var(--color-gris-claro);
-    background-size: cover;
-    background-position: -270px;
-    background-repeat: no-repeat;
-    transition: 1s;
-  }
-  
-  .container3:hover .flap1::after{
-    transform: translatex(300px);
-  }
-  
-  .container3:hover .flap1::before{
-    transform: translatex(-300px);
-  }
-  .dos{
-      /* border:1px solid #fff;
-      color: #fff; */
-      margin-bottom: 50px;
-  }
-
-
-
-  /* PORFOLIO VIEJO */
-  .contenedor_porfolio{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 50px;
-    justify-items: center;
-    align-items: center;
-    margin: 100px;
-    margin-top: 50px;
-   
+  bottom: 20%;
+  left:50px;
+  color:var(--color-secundario-claro);
+  font-size: 15px;;
+}
+.porfolio_cara:hover > h2{
+  font-size: 20px;;
 }
 
-.itemp{
-    width: 150px;
-    height: 150px;
-  
-    -webkit-transition:all .9s ease; /* Safari y Chrome */
-    -moz-transition:all .9s ease; /* Firefox */
-    -o-transition:all .9s ease; /* IE 9 */
-    -ms-transition:all .9s ease; /* Opera */
-    width:100%;
-    filter: grayscale(100%);
+.vicsa{
+  background-image: url("img/vicsa_web.png");
 }
-.itemp:hover{
-    -webkit-transform:scale(2.50);
-    -moz-transform:scale(2.50);
-    -ms-transform:scale(2.50);
-    -o-transform:scale(2.50);
-    transform:scale(2.50);
-    color:white;
-    /*text-shadow: 1px 1px 5px blueviolet;*/
-    filter: none;
-    border: none;
-    
+.tecnica{
+  background-image: url("img/tecnica_web.png");
+}
+.libertad{
+  background-image: url("img/libertad_web.png");
 }
 
-.itemp{
-    background: url("img/1.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid blueviolet;
-    position: relative;
-    
+.blanco{
+  background-image: url("img/blanco_web.png");
 }
-.enlace-porfolio{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+.mafacha{
+  background-image: url("img/mafacha_web.png");
 }
-.unop{
-    background-image: url("img/3tania.png");
-    background-position: center;
-}
-.dosp{
-    background-image: url("img/4pediatrica.png");
-    background-position: center;
-}
-/* .tresp{
-    background-image: url("img/3lorelei.png");
-    background-position: center;
-} */
-.cuatrop{
-    background-image: url("img/6misturnos.png");
-    background-position: center;
-}
-.cincop{
-    background-image: url("img/2rinder.png");
-    background-position: center;
-}
-/* .seisp{
-    background-image: url("img/6maba.png");
-    background-position: center;
-} */
-.sietep{
-    background-image: url("img/5santa.png");
-    background-position: center;
-}
-/* .ochop{
-    background-image: url("img/8ordencia.png");
-    background-position: center;;
-} */
-.nuevep{
-    background-image: url("img/1argensoft.png");
-    background-position: center;
+.sibiu{
+  background-image: url("img/sibiu_web.png");
 }
 
+
+.aclaracion{
+  margin:20px;
+}
 /* CONTACTO */
-.contacto-ws{
-  background-image: url("img/whats.png");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
+ .contacto-ws{
+ 
+  width: 80px;
+  height: 80px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 20px;
@@ -470,7 +345,8 @@ color: var(--color-secundario-claro);
 }
 
 .porfolio_cara{
-  font-size: 10px;
+  font-size: 25px;
+  color:var(--color-secundario-claro)
 }
 .porfolio_cara:hover{
    font-size:13px;
